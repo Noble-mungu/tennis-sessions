@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link
       rel="stylesheet"
@@ -16,7 +17,7 @@
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitesp-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
+        <header class="flex items-center justify-between whitesp-nowrap border-b border-solid border-b-[#e7edf4] px-4 sm:px-10 py-3">
           <div class="flex items-center gap-4 text-[#0d141c]">
             <div class="size-4">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,29 +50,25 @@
             </button>
           </div>
         </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-full max-w-full md:max-w-[960px] flex-1">
             <div class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBiZt2OVV9HwTFn-TzcRdTIlIUrClEAG5-aESMzy3mK71-2J5qyOfXWIDJLfMOtfdjcUShO0wYXAYT8DWXD3vOVsTvCMlW-0Yrl89flBktv7iBsuSENIhVTucqdU-0q5fY2b7sXSsMIB5QxsIq5kxn6427bWEyretYg4MUwIko9ArfLcAo12I1neBn25NrJxav-lOLM_RgdLSTulCfmLYtdPiL1WGKfe_N6lYGlYGHxYJ13xOnuYCy3mGhmq3wR6Huypo_gsU-EjHNz");'
-                >
-                  <div class="flex flex-col gap-2 text-center">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                    >
-                      Elevate Your Game with Expert Coaching
-                    </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      Unlock your potential on the court with personalized tennis coaching tailored to your skill level and goals.
-                    </h2>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#3d98f4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+              <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+                <div class="flex flex-col gap-2 text-center">
+                  <h1
+                    class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
                   >
-                    <span class="truncate">Book a Lesson</span>
-                  </button>
+                    Ready to Take Your Game to the Next Level?
+                  </h1>
+                </div>
+                <div class="flex flex-1 justify-center">
+                  <div class="flex justify-center">
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#3d98f4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
+                    >
+                      <span class="truncate">Book a Lesson</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -333,26 +330,6 @@
                 </div>
               </div>
             </div>
-            <div class="@container">
-              <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
-                <div class="flex flex-col gap-2 text-center">
-                  <h1
-                    class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
-                  >
-                    Ready to Take Your Game to the Next Level?
-                  </h1>
-                </div>
-                <div class="flex flex-1 justify-center">
-                  <div class="flex justify-center">
-                    <button
-                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#3d98f4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
-                    >
-                      <span class="truncate">Book a Lesson</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;'>
@@ -398,8 +375,8 @@
             <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;'>
                 <div class="layout-container flex h-full grow flex-col">
                  
-                  <div class="px-40 flex flex-1 justify-center py-5">
-                    <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1" id="contact">
+                  <div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+                    <div class="layout-content-container flex flex-col w-full max-w-full md:max-w-[512px] py-5 md:max-w-[960px] flex-1" id="contact">
                       <div class="flex flex-wrap justify-between gap-3 p-4">
                         <div class="flex min-w-72 flex-col gap-3">
                           <p class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight">Get in Touch</p>
