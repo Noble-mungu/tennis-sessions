@@ -399,7 +399,7 @@
                 <div class="layout-container flex h-full grow flex-col">
                  
                   <div class="px-40 flex flex-1 justify-center py-5">
-                    <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
+                    <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1" id="contact">
                       <div class="flex flex-wrap justify-between gap-3 p-4">
                         <div class="flex min-w-72 flex-col gap-3">
                           <p class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight">Get in Touch</p>
@@ -408,42 +408,50 @@
                           </p>
                         </div>
                       </div>
-                      <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-                        <label class="flex flex-col min-w-40 flex-1">
-                          <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">Name</p>
-                          <input
-                            plholder="Your Name"
-                            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 plholder:text-[#49739c] p-4 text-base font-normal leading-normal"
-                            value=""
-                          />
-                        </label>
-                      </div>
-                      <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-                        <label class="flex flex-col min-w-40 flex-1">
-                          <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">Email</p>
-                          <input
-                            plholder="Your Email"
-                            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 plholder:text-[#49739c] p-4 text-base font-normal leading-normal"
-                            value=""
-                          />
-                        </label>
-                      </div>
-                      <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-                        <label class="flex flex-col min-w-40 flex-1">
-                          <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">Message</p>
-                          <textarea
-                            plholder="Your Message"
-                            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none min-h-36 plholder:text-[#49739c] p-4 text-base font-normal leading-normal"
-                          ></textarea>
-                        </label>
-                      </div>
-                      <div class="flex px-4 py-3 justify-end">
-                        <button
-                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#3d98f4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
-                        >
-                          <span class="truncate">Send Message</span>
-                        </button>
-                      </div>
+                      <form action="https://formspree.io/f/mnqewqzv" method="POST" class="flex flex-col" id="contactForm">
+                        <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                          <label class="flex flex-col min-w-40 flex-1">
+                            <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">Name</p>
+                            <input
+                              name="name"
+                              placeholder="Your Name"
+                              required
+                              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 placeholder:text-[#49739c] p-4 text-base font-normal leading-normal"
+                            />
+                          </label>
+                        </div>
+                        <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                          <label class="flex flex-col min-w-40 flex-1">
+                            <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">Email</p>
+                            <input
+                              name="email"
+                              type="email"
+                              placeholder="Your Email"
+                              required
+                              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-14 placeholder:text-[#49739c] p-4 text-base font-normal leading-normal"
+                            />
+                          </label>
+                        </div>
+                        <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                          <label class="flex flex-col min-w-40 flex-1">
+                            <p class="text-[#0d141c] text-base font-medium leading-normal pb-2">Message</p>
+                            <textarea
+                              name="message"
+                              placeholder="Your Message"
+                              required
+                              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none min-h-36 placeholder:text-[#49739c] p-4 text-base font-normal leading-normal"
+                            ></textarea>
+                          </label>
+                        </div>
+                        <div class="flex px-4 py-3 justify-end">
+                          <button type="submit"
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#3d98f4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+                          >
+                            <span class="truncate">Send Message</span>
+                          </button>
+                        </div>
+                        <div id="formSuccess" style="display:none; color:green; text-align:center; margin-bottom:1rem;">Thank you! Your message has been sent.</div>
+                      </form>
                       <h3 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Contact Information</h3>
                       <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
                         <div class="text-[#0d141c] flex items-center justify-center rounded-lg bg-[#e7edf4] shrink-0 size-12" data-icon="Phone" data-size="24px" data-weight="regular">
@@ -500,3 +508,34 @@
     </div>
   </body>
 </html>
+
+<script>
+// Smooth scroll for all 'Book a Lesson' and 'Book Now' buttons
+function scrollToContact(e) {
+  e.preventDefault();
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+}
+// Attach to all relevant buttons
+[...document.querySelectorAll('button, a')].forEach(btn => {
+  if (btn.textContent.trim() === 'Book a Lesson' || btn.textContent.trim() === 'Book Now') {
+    btn.addEventListener('click', scrollToContact);
+  }
+});
+// Formspree AJAX submission for success message
+const form = document.getElementById('contactForm');
+if (form) {
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      document.getElementById('formSuccess').style.display = 'block';
+      form.reset();
+    }
+  });
+}
+</script>
